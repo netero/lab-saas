@@ -1,0 +1,135 @@
+$font-stack: Helvetica, sans-serif;
+$background-color: #0D1317;
+$default-font-size: 1rem;
+
+$primary-color:#0E3953;
+$primary-font-color: #89D2DC;
+$primary-hover-color: #89D2DC;
+$primary-hover-font-color: #0E3953;
+$secondary-color: #101D42;
+$secondary-font-color: #FFFFFF;
+
+body {
+  font: $default-font-size $font-stack;
+  color: $primary-font-color;
+  background-color: $background-color;
+}
+
+h1.title{
+  font-size: 3 * $default-font-size;
+  font-weight: bolder;
+}
+
+.text-centered{
+  text-align: center;
+}
+
+section{
+  margin: 3rem;
+  margin-bottom: 2rem;
+  h3.header{
+    font-size: 1.8 * $default-font-size;
+    
+    > * {
+      display: inline;
+    }
+
+    > .buttons{
+      float: right;
+    }
+  }
+
+  .tasks-container{
+    list-style: none;
+    -ms-box-orient: horizontal;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    align-items: center;
+  
+  }
+}
+
+.task{
+  width: 20rem;
+  margin:0.5rem;
+  padding: 0.8rem;
+  border-radius: 0.5rem;
+  background-color: $secondary-color;
+  color: $secondary-font-color;
+}
+
+.task:hover{
+  background-color: $primary-hover-color;
+  color: $primary-hover-font-color;
+}
+.task.is-active{
+  background-color: $primary-hover-color;
+  color: $primary-hover-font-color;
+}
+
+.task:not(.is-active) .description,
+.task:not(.is-active) .buttons
+ {
+  display: none;
+}
+
+/* Buttons */
+.buttons{
+  > *{
+    display: inline-block;
+  }
+
+  button{
+    padding: 0.7rem;
+    margin:0.2rem;
+    color: $primary-font-color;
+    background-color: $primary-color;
+    border-style: solid;
+    border-color: $secondary-color;
+    border-width: 0.1rem;
+    border-radius: 0.5rem;
+    font-weight: bold;
+  }
+  
+  button:hover{
+    background-color: $secondary-color;
+    border-color: $primary-color;
+    color:$secondary-font-color
+  }
+
+  button.success{
+    background-color: rgb(13, 161, 13);
+    color: white;
+    border: none;
+  }
+
+  button.success:hover{
+    background-color: rgb(8, 95, 8);
+  }
+
+  button.info{
+    background-color: rgb(13, 65, 161);
+    color: white;
+    border: none;
+  }
+  
+  button.info:hover{
+    background-color: rgb(8, 38, 95);
+  }
+  
+  button.danger{
+    background-color: rgb(161, 30, 13);
+    color: white;
+    border: none;
+  }
+  
+  button.danger:hover{
+    background-color: rgb(97, 18, 8);
+  }
+}
