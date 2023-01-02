@@ -27,8 +27,9 @@ sass sass:public
 
 Experiment Folder Structure
 ============================
-sass
-    style.css
-public
-    index.html
-    style.css
+- sass
+    - style.css
+- public
+    - index.html
+    - style.css
+    - index.js
