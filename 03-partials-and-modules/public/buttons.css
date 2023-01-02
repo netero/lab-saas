@@ -1,0 +1,46 @@
+/* Buttons */
+.buttons > * {
+  display: inline-block;
+}
+.buttons button {
+  padding: 0.7rem;
+  margin: 0.2rem;
+  color: #89D2DC;
+  background-color: #0E3953;
+  border-style: solid;
+  border-color: #101D42;
+  border-width: 0.1rem;
+  border-radius: 0.5rem;
+  font-weight: bold;
+}
+.buttons button:hover {
+  background-color: #101D42;
+  border-color: #0E3953;
+  color: #FFFFFF;
+}
+.buttons button.success {
+  background-color: rgb(13, 161, 13);
+  color: white;
+  border: none;
+}
+.buttons button.success:hover {
+  background-color: rgb(8, 95, 8);
+}
+.buttons button.info {
+  background-color: rgb(13, 65, 161);
+  color: white;
+  border: none;
+}
+.buttons button.info:hover {
+  background-color: rgb(8, 38, 95);
+}
+.buttons button.danger {
+  background-color: rgb(161, 30, 13);
+  color: white;
+  border: none;
+}
+.buttons button.danger:hover {
+  background-color: rgb(97, 18, 8);
+}
+
+/*# sourceMappingURL=buttons.css.map */

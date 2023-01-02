@@ -1,0 +1,56 @@
+@use '_variables';
+/* Buttons */
+.buttons{
+    > *{
+      display: inline-block;
+    }
+  
+    button{
+      padding: 0.7rem;
+      margin:0.2rem;
+      color: variables.$primary-font-color;
+      background-color: variables.$primary-color;
+      border-style: solid;
+      border-color: variables.$secondary-color;
+      border-width: 0.1rem;
+      border-radius: 0.5rem;
+      font-weight: bold;
+    }
+    
+    button:hover{
+      background-color: variables.$secondary-color;
+      border-color: variables.$primary-color;
+      color:variables.$secondary-font-color
+    }
+  
+    button.success{
+      background-color: rgb(13, 161, 13);
+      color: white;
+      border: none;
+    }
+  
+    button.success:hover{
+      background-color: rgb(8, 95, 8);
+    }
+  
+    button.info{
+      background-color: rgb(13, 65, 161);
+      color: white;
+      border: none;
+    }
+    
+    button.info:hover{
+      background-color: rgb(8, 38, 95);
+    }
+    
+    button.danger{
+      background-color: rgb(161, 30, 13);
+      color: white;
+      border: none;
+    }
+    
+    button.danger:hover{
+      background-color: rgb(97, 18, 8);
+    }
+  }
+  

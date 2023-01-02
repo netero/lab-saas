@@ -1,0 +1,46 @@
+@use '_variables';
+body {
+    font: variables.$default-font-size variables.$font-stack;
+    color: variables.$primary-font-color;
+    background-color: variables.$background-color;
+  }
+  
+  h1.title{
+    font-size: 3 * variables.$default-font-size;
+    font-weight: bolder;
+  }
+  
+  .text-centered{
+    text-align: center;
+  }
+  
+  section{
+    margin: 3rem;
+    margin-bottom: 2rem;
+    h3.header{
+      font-size: 1.8 * variables.$default-font-size;
+      
+      > * {
+        display: inline;
+      }
+  
+      > .buttons{
+        float: right;
+      }
+    }
+  
+    .tasks-container{
+      list-style: none;
+      -ms-box-orient: horizontal;
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -moz-flex;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-wrap: wrap;
+      flex-wrap: wrap;
+      align-items: center;
+    
+    }
+  }
