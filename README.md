@@ -32,5 +32,6 @@ Experiment Folder Structure
     - {partialAndModuleName}.scss
 - public
     - index.html
-    - style.css
     - index.js
+    - style.css
+    - {partialAndModuleName}.css
