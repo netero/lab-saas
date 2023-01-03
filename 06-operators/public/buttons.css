@@ -1,0 +1,46 @@
+/* Buttons */
+.buttons > * {
+  display: inline-block;
+}
+.buttons button {
+  padding: 0.7rem;
+  margin: 0.2rem;
+  color: #89D2DC;
+  background-color: #0E3953;
+  border-style: solid;
+  border-color: #101D42;
+  border-width: 0.1rem;
+  border-radius: 0.5rem;
+  font-weight: bold;
+}
+.buttons button:hover {
+  background-color: #101D42;
+  border-color: #0E3953;
+  color: #FFFFFF;
+}
+.buttons button.success {
+  background: DarkGreen;
+  box-shadow: 0 0 1px rgba(0, 100, 0, 0.25);
+  color: #fff;
+}
+.buttons button.success:hover {
+  background-color: rgb(17, 148, 17);
+}
+.buttons button.info {
+  background: DarkBlue;
+  box-shadow: 0 0 1px rgba(0, 0, 139, 0.25);
+  color: #fff;
+}
+.buttons button.info:hover {
+  background-color: rgb(16, 77, 190);
+}
+.buttons button.danger {
+  background: DarkRed;
+  box-shadow: 0 0 1px rgba(139, 0, 0, 0.25);
+  color: #fff;
+}
+.buttons button.danger:hover {
+  background-color: rgb(196, 37, 16);
+}
+
+/*# sourceMappingURL=buttons.css.map */

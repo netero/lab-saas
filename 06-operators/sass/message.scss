@@ -1,0 +1,41 @@
+@use "sass:math";
+
+/* This CSS will print because %message-shared is extended. */
+%message-shared {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    color: rgb(209, 209, 209);
+    border-radius: 0.5rem;
+    margin: 0.5rem;
+    max-width: math.div(600px, 960px) * 30%;
+    display: inline-block;
+  }
+  
+  // This CSS won't print because %equal-heights is never extended.
+  %equal-heights {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .message {
+    @extend %message-shared;
+  }
+  
+  .message.success {
+    @extend %message-shared;
+    border-color: rgb(64, 114, 64);
+    background-color: rgb(64, 114, 64);
+  }
+  
+  .message.error {
+    @extend %message-shared;
+    border-color: rgb(148, 86, 86);
+    background-color: rgb(148, 86, 86);
+  }
+  
+  .message.warning {
+    @extend %message-shared;
+    border-color: rgb(126, 126, 74);
+    background-color: rgb(126, 126, 74);
+  }
+  

@@ -1,0 +1,43 @@
+body {
+  font: 1rem Helvetica, sans-serif;
+  color: #89D2DC;
+  background-color: #0D1317;
+}
+
+h1.title {
+  font-size: 3rem;
+  font-weight: bolder;
+}
+
+.text-centered {
+  text-align: center;
+}
+
+section {
+  margin: 3rem;
+  margin-bottom: 2rem;
+}
+section h3.header {
+  font-size: 1.8rem;
+}
+section h3.header > * {
+  display: inline;
+}
+section h3.header > .buttons {
+  float: right;
+}
+section .tasks-container {
+  list-style: none;
+  -ms-box-orient: horizontal;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+/*# sourceMappingURL=base.css.map */

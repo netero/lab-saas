@@ -1,0 +1,27 @@
+/* This CSS will print because %message-shared is extended. */
+.message.warning, .message.error, .message.success, .message {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  color: rgb(209, 209, 209);
+  border-radius: 0.5rem;
+  margin: 0.5rem;
+  max-width: 18.75%;
+  display: inline-block;
+}
+
+.message.success {
+  border-color: rgb(64, 114, 64);
+  background-color: rgb(64, 114, 64);
+}
+
+.message.error {
+  border-color: rgb(148, 86, 86);
+  background-color: rgb(148, 86, 86);
+}
+
+.message.warning {
+  border-color: rgb(126, 126, 74);
+  background-color: rgb(126, 126, 74);
+}
+
+/*# sourceMappingURL=message.css.map */
