@@ -1,0 +1,24 @@
+@use '_variables';
+.task{
+    width: 20rem;
+    margin:0.5rem;
+    padding: 0.8rem;
+    border-radius: 0.5rem;
+    background-color: variables.$secondary-color;
+    color: variables.$secondary-font-color;
+  }
+  
+  .task:hover{
+    background-color: variables.$primary-hover-color;
+    color: variables.$primary-hover-font-color;
+  }
+  .task.is-active{
+    background-color: variables.$primary-hover-color;
+    color: variables.$primary-hover-font-color;
+  }
+  
+  .task:not(.is-active) .description,
+  .task:not(.is-active) .buttons
+   {
+    display: none;
+  }

@@ -1,0 +1,25 @@
+.task {
+  width: 20rem;
+  margin: 0.5rem;
+  padding: 0.8rem;
+  border-radius: 0.5rem;
+  background-color: #101D42;
+  color: #FFFFFF;
+}
+
+.task:hover {
+  background-color: #89D2DC;
+  color: #0E3953;
+}
+
+.task.is-active {
+  background-color: #89D2DC;
+  color: #0E3953;
+}
+
+.task:not(.is-active) .description,
+.task:not(.is-active) .buttons {
+  display: none;
+}
+
+/*# sourceMappingURL=task.css.map */
